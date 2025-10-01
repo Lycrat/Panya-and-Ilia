@@ -1,5 +1,6 @@
-from Fridge import Fridge
-from NoIceException import NoIceException
+import KitchenAppliances.Fridge as Fridge
+import KitchenAppliances.NoIceException as NoIceException
+
 class SmartFridge(Fridge):
     def __init__(self, ingredients, ice, temp=0):
         super().__init__( ingredients, temp)
@@ -12,7 +13,7 @@ class SmartFridge(Fridge):
             print("DISPENSING ICE...")
             self.ice -= 1 
         else:
-            raise NoIceException("NO ICE", 400)
+            raise NoIceException.NoIceException("NO ICE", 400)
                     
     def empty_fridge(self):
         self.ingredients = []

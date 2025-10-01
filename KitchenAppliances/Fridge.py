@@ -15,7 +15,7 @@ class Fridge:
         """
         return self.__ingredients
     
-    def add_ingredients(ingredients):
+    def add_ingredients(self, ingredients):
         """
         Add ingredients to the fridge
         

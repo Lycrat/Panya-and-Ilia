@@ -2,7 +2,7 @@ class NoIceException(Exception):
     def __init__(self, message, error):
         super().__init__(message)
         self.message = message
-        self.errors = error
+        self.error = error
         
 
     def __str__(self):
